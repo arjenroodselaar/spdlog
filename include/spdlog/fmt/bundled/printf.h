@@ -13,7 +13,7 @@
 #include <algorithm> // std::fill_n
 #include <limits>    // std::numeric_limits
 
-#include "ostream.h"
+#include <spdlog/fmt/bundled/ostream.h>
 
 namespace fmt {
 namespace internal {
@@ -717,7 +717,7 @@ FMT_VARIADIC(int, fprintf, std::ostream &, CStringRef)
 } // namespace fmt
 
 #ifdef FMT_HEADER_ONLY
-#include "printf.cc"
+#include <spdlog/fmt/bundled/printf.cc>
 #endif
 
 #endif // FMT_PRINTF_H_

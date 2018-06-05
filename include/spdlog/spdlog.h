@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "common.h"
-#include "logger.h"
+#include <spdlog/common.h>
+#include <spdlog/logger.h>
 
 #include <chrono>
 #include <functional>
@@ -201,4 +201,4 @@ void drop_all();
 
 } // namespace spdlog
 
-#include "details/spdlog_impl.h"
+#include <spdlog/details/spdlog_impl.h>

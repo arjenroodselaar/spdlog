@@ -10,7 +10,7 @@
 #ifndef FMT_OSTREAM_H_
 #define FMT_OSTREAM_H_
 
-#include "format.h"
+#include <spdlog/fmt/bundled/format.h>
 #include <ostream>
 
 namespace fmt {
@@ -111,7 +111,7 @@ FMT_VARIADIC(void, print, std::ostream &, CStringRef)
 } // namespace fmt
 
 #ifdef FMT_HEADER_ONLY
-#include "ostream.cc"
+#include <spdlog/fmt/bundled/ostream.cc>
 #endif
 
 #endif // FMT_OSTREAM_H_

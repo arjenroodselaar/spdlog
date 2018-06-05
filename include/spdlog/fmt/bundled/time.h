@@ -10,7 +10,7 @@
 #ifndef FMT_TIME_H_
 #define FMT_TIME_H_
 
-#include "format.h"
+#include <spdlog/fmt/bundled/format.h>
 #include <ctime>
 
 #ifdef _MSC_VER

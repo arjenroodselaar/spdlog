@@ -4912,7 +4912,7 @@ inline internal::UdlArg<wchar_t> operator"" _a(const wchar_t *s, std::size_t)
 
 #ifdef FMT_HEADER_ONLY
 #define FMT_FUNC inline
-#include "format.cc"
+#include <spdlog/fmt/bundled/format.cc>
 #else
 #define FMT_FUNC
 #endif
